@@ -43,9 +43,12 @@ for _ in range(N):
     tree[root] = [left, right]  # 처음 {'A': ['B', 'C']}
 
 
+
+# root노드를 방문할 때 print를 해주면 경로를 찾을 수 있다.
+
 def preorder(root):
     if root != '.':
-        print(root, end='')  # root
+        print(root, end='')  # root 를 방문할 때 출력해준다.
         preorder(tree[root][0])  # left
         preorder(tree[root][1])  # right
 

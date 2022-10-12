@@ -53,7 +53,8 @@ def postorder(x, y):
         if nums[x] < nums[i]: # 50 < 30 ..~~~~~ 
             mid = i # mid = 6
             break
-    postorder(x+1, mid-1)    #mid -1 번째가 왼쪽의 마지막   # 왼쪽 확인 끝날때까지 재귀
+    postorder(x+1, mid-1)    #mid -1 번째가 왼쪽의 마지막   
+    # 왼쪽 확인 끝날때까지 재귀
     postorder(mid, y)  # 왼쪽 탐색 끝난 후 빠져나올 때의 mid      
     # y = 3 mid 4 가 처음으로 들어옴    # 오른쪽 확인 끝날떄까지 재귀
     print(nums[x])
